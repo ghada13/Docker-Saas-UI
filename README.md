@@ -39,16 +39,20 @@ L’application adopte une approche *SaaS (Software as a Service)* en intégrant
 
 docker-saas-ui/
 ├── app/
-│ ├── app.py # Application Flask principale
-│ ├── templates/ # Fichiers HTML
-│ ├── static/ # CSS / JS
-│ └── nginx_sites/ # Sites Nginx générés dynamiquement
+│   ├── app.py                 # Application Flask principale
+│   ├── templates/             # Templates HTML (Jinja2)
+│   ├── static/                # Fichiers statiques (CSS / JS / images)
+│   └── nginx_sites/           # Configurations Nginx générées dynamiquement
+│
 ├── instance/
-│ └── users.db # Base de données SQLite
+│   └── users.db               # Base de données SQLite (environnement local)
+│
 ├── logs/
-│ └── actions.log # Journal des actions
-├── requirements.txt
-├── README.md
+│   └── actions.log            # Journal des actions applicatives
+│
+├── requirements.txt           # Dépendances Python
+├── README.md                  # Documentation du projet
+└── .gitignore                 # Fichiers ignorés par Git
 
 
 
@@ -124,3 +128,4 @@ URL : http://localhost:5000
 - Supervision CPU / RAM
 
 - Interface moderne type SaaS
+
